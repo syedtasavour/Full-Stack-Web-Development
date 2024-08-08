@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html> <!-- Root -->
+
+<head>
+    <title>
+        Forms In HTML
+    </title> <!-- MetaData -->
+</head>
+
+<body> <!--   -->
+    <header>
+        <h1>Forms In HTML</h1>
+    </header>
+    <main>
+        <div>
+            <form action="/action">
+                <label for="input">Input</label>
+                <input placeholder="Input" id="input">
+                <br><br>
+                <label for="text">Text</label>
+                <input type="text" id="text" placeholder="Enter Text">
+                <br><br>
+                <label for="pass">Password</label>
+                <input type="password" id="pass" placeholder="Password">
+                <br><br>
+                <label for="num">Number</label>
+                <input type="number" id="num" placeholder="Number">
+                <br><br>
+                <label for="time">Time</label>
+                <input type="time" id="time">
+                <br><br>
+                <label for="date">Date</label>
+                <input type="date" id="date">
+                <br><br>
+                <label for="color">Color</label>
+                <input type="color" id="color">
+                <br><br>
+                <label for="file">File</label>
+                <input type="file" id="file">
+                <br><br>
+                <input type="button" id="button" value="Input Button">
+                <input type="submit">
+                <input type="reset">
+
+                <br><br>
+                <button type="submit" id="button">Submit</button>
+                <button type="button" id="button">Button</button>
+                <button type="reset" id="Reset">Reset</button>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <form action="/action">
+                <label for="username">Username: </label>
+                <input type="text" id="Username" placeholder="Enter Username" name="user" />
+                <br><br>
+                <label for="password">Password: </label>
+                <input type="password" id="password" placeholder="Password" name="pass"><br>
+                <button>Submit</button>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <form action="https://www.youtube.com/results?">
+                <label for="Search">Search: </label>
+                <input type="text" id="Search" placeholder="Search in Youtube" name="search_query">
+                <button>Search</button>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <form action="https://www.google.com/search">
+                <label for="Search">Search: </label>
+                <input type="text" id="Search" placeholder="Search in Google" name="q">
+                <button>Search</button>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <form action="/action">
+                <input type="checkbox" name="age" id="age" />
+                <label for="age">I Am 18+</label>
+                <input type="radio" name="gender" id="Male" value="Male" />
+                <label for="Male">Male</label>
+                <input type="radio" name="gender" id="Female" value="Female" />
+                <label for="Female">Female</label>
+                <button>Submit</button>
+            </form>
+        </div><hr>
+        <div>
+            <form action="/action">
+                <input type="checkbox" name="sub" id="English" value="English" />
+                <label for="English">English</label>
+
+                <input type="checkbox" name="sub" id="Math" value="Math" />
+                <label for="Math">Math</label>
+
+                <input type="checkbox" name="sub" id="IT" value="IT" />
+                <label for="IT">IT</label>
+                
+                <input type="checkbox" name="sub" id="SST" value="SST" />
+                <label for="SST">SST</label>
+                
+                <button>Submit</button>
+            
+        </div><hr>
+        <div>
+            <select name="profession" id="profession">
+                <option value="Stu">Student</option>
+                <option value="dev" selected>Developer</option>
+            </select> <button>Submit</button>
+        </div><hr>
+    <div>
+        <label for="vol">Select Volume</label>
+        <input type="range" id="vol" min="0" max="100" name="vol" step="10" value="70"/>
+        <button>Submit</button>
+    </div>
+    <label for="feedback">Please Give Your Feedback</label><br>
+    <textarea id="feedback" name="feedback" rows="5" cols="40">
+    </textarea> <button>Submit</button>
+
+</form>
+
+    </main>
+</body>
+
+</html>
