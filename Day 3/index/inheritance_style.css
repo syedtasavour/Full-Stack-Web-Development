@@ -1,0 +1,28 @@
+#mainTopic{
+    color:blue;
+}h1,h3,h5{
+    font-family:"Georgia";
+}
+*{
+    text-align:center;
+}
+.pp{
+    color:white;
+    background-color:cornflowerblue;
+}
+div button{
+    background-color:blue;
+    color:azure;
+}
+button:hover{
+    background-color:yellow;
+    color:blue;}
+p:nth-of-type(odd){
+    color:rgb(251, 255, 0);
+}
+h1:first-letter{
+    color:red;
+}
+ #yes:checked+label{
+    color:rgb(255, 0, 0);
+}
