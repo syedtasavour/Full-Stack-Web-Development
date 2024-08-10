@@ -1,0 +1,22 @@
+div{
+    height:100px;
+    width:100px;
+    background-color:rgba(112, 30, 28,1);
+}
+#opacity{
+    background-color:rgb(111, 112, 28);
+    opacity:0.5;
+    margin-bottom:33px;
+}
+#div2{
+    height:100px;
+    width:100px;
+    margin: 0 auto;
+    margin-top:10px;
+    background-color:green;
+    transition:margin-top 2s ease-in 1s;
+}
+#div2:hover{
+    margin-top:400px;
+    background-color:pink;
+}
