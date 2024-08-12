@@ -1,0 +1,29 @@
+h1{
+    background-color:yellow;
+    border:2px solid black;
+}
+@media (min-width: 700px){
+    h1{
+        background-color:red;
+        border:2px dotted black;
+    }
+}
+
+@media (max-width: 200px){
+    h1{
+        background-color:rgb(25, 41, 14);
+        border:2px dashed green;
+    }
+}
+@media (Min-width: 200px)and (max-width:600px){
+    h1{
+        background-color:rgb(255, 0, 191);
+        border:2px dashed green;
+    }
+}
+@media(orientation:landscape){
+    h1{
+        background-color:grey;
+    }
+
+}
