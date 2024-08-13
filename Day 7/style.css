@@ -39,7 +39,7 @@
     grid-column: 1/13;
 }
 
-@media(min-width:720px) {
+@media (max-width:720px) {
     #one {
         grid-column: 1/13;
     }
