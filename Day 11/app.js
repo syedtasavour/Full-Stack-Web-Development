@@ -1,24 +1,21 @@
-// let n1 = 2;
-// let n2 = 7;
-// let n3 = 9;
-
-// if(n1>n2 && n1>n3){
-//     console.log(n1);
-// }else if(n2 > n1 && n2> n3){
-//     console.log(n2);
-// }else{
-//     console.log(n3);
-// }
-
-// let x = 32;
-// let y = 47852;
-// // if(x[x.length]==y[y.length]){
-// //     console.log(same);
-// // }
+let a = ["arr1","arr2","arr3","arr4"];
+console.log(a);
+a.push("arr5");
+console.log(a);
+a.pop();
+console.log(a); 
+a.unshift("arr0");
+console.log(a); 
+a.shift("arr0");
+console.log(a); 
+ let arr =["january","july","march","august"];
+ arr.shift();
+ arr.shift();
+ arr.unshift("july","june");
+ console.log(arr);  
 
 
-// let h = "    he  Le   ";
-// console.log(h.trim());
-let ss = "K K K K K k k k k k k higer LOWER";
-console.log(ss.toLowerCase());
-       
+ let b = a.concat(arr);
+ console.log(b);   
+ b.reverse();
+ console.log(b);  
