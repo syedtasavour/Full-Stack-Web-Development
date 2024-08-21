@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 let a = 56;
 let temp = a;
 let b =0;
@@ -22,4 +23,12 @@ for(greatest of array){
     if(greatest >= min){
         min = greatest;
     }console.log(min);
+=======
+let h = [["ironman", "Spiderman", "thor"], ["superman", "wonder women", "flash"]];
+for (let i = 0; i < h.length; i++) {
+    console.log(`List ${i}`);
+    for (let j = 0; j < h[i].length; j++) {
+        console.log(h[i][j]);
+    }
+>>>>>>> Stashed changes
 }
