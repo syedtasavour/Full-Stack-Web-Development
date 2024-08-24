@@ -28,8 +28,6 @@ function nsum (n){
         result +=  " " + str[i];
     }return result;
  }
-
-
 console.log(concat(str));
 
 
