@@ -60,3 +60,15 @@ function changeText() {
     fact.innerHTML = res;
   });
 }
+changeText();
+
+const url3 = "https://icanhazdadjoke.com/";
+async function getJoke(){
+ try{
+  const config = {headers:{Accept: "Application/json"}};
+  let res = await axios.get(url3,config);
+  console.log(res.data);
+ }catch(error){
+  console.log(error);
+ }
+}
