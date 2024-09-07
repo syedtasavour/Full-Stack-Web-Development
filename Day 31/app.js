@@ -15,12 +15,6 @@ let a =1;
     },delay)
 
   })};
-
-
-
-
-
-
 async function demo(){
   try{
     await changeColor('orange',1000);
@@ -39,11 +33,15 @@ async function demo(){
 }
 demo(); 
 
+let json = '{"fact":"A happy cat holds her tail high and steady.","length":43}'
+let validparse = JSON.parse(json);
+console.log(validparse.fact);
 
-
-
-
-
+let student ={
+  "name" : "Student One",
+  "rollno" : 7,
+};
+console.log(student);
 
 
 
