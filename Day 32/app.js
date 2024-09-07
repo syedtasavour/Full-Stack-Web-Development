@@ -60,4 +60,3 @@ function changeText() {
     fact.innerHTML = res;
   });
 }
-changeText();
