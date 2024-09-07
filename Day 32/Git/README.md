@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Test README for Git Command Practice
 
 ## Overview
@@ -263,3 +264,6 @@ This README provided an overview of basic and advanced Git commands that you can
 
 --- 
 
+=======
+
+>>>>>>> 50ef98be825dd2921426f28e47c3315e0ae35fe5
