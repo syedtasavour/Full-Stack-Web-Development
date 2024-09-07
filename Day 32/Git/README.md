@@ -263,7 +263,3 @@ And make sure your `.gitignore` file is configured properly to avoid adding unne
 This README provided an overview of basic and advanced Git commands that you can practice to get familiar with Git. From initializing repositories to committing changes and working with branches, each section helps you understand the essentials of version control. By using this file as a test, you'll be able to create your own project workflow and efficiently manage code with Git.
 
 --- 
-
-=======
-
->>>>>>> 50ef98be825dd2921426f28e47c3315e0ae35fe5
