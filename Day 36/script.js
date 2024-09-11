@@ -1,2 +1,2 @@
-const fruits = require("./Backend");
-console.log(fruits[0].name);
+import { sum, PI } from "./math.js";
+console.log(sum(1,2));
