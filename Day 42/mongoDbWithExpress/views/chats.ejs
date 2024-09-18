@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Mern Project</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Static CSS from public folder -->
+</head>
+
+<body>
+    <h1>All Chats</h1>
+    
+    <form method="GET" action="/newchat">
+        <button>New Chat</button>
+    </form>
+
+    <% for(let scs of sc) { %>
+        <div class="chat">
+            <div class="sender">
+                <p>From: <%= scs.from %></p>
+            </div>
+            <div class="msg-box">
+                <p><%= scs.msg %></p>
+            </div>
+            <div class="receiver">
+                <p>Received By: <%= scs.to %></p>
+            </div>
+            <div class="timestamp">
+                <p>Time: 
+                    <% 
+                        let date = new Date(scs.created_at); 
+                        let options = { hour: '2-digit', minute: '2-digit', hour12: true, timeZone: 'Asia/Kolkata' }; 
+                        let timeIndia = date.toLocaleTimeString('en-US', options); 
+                    %>
+                    <%= timeIndia %>
+                </p>
+                <p>Date: <%= scs.created_at.toString().split(" ").slice(0, 4).join(" ") %></p>
+            </div>
+            <div class="actions">
+                <form method="GET" action="/chats/<%= scs._id %>/edit">
+                    <button>Edit</button>
+                </form>
+                <form method="POST" action="/delete/<%= scs._id %>/?_method=DELETE">
+                    <button>Delete</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+    <% } %>
+
+    <script src="/js/script.js"></script> <!-- Static JS from public folder -->
+</body>
+
+</html>
