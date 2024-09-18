@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Chat Application</title>
+</head>
+
+<body>
+    <!-- Display the title if provided, otherwise show 'New Chat' -->
+    <% if (typeof title !== 'undefined') { %>
+        <h1><%= successMessage %>!</h1>
+    <% } else { %>
+        <h1>Start a New Chat</h1>
+    <% } %>
+
+    <!-- Chat form -->
+    <form action="/sendChat" method="POST">
+        <div>
+            <label for="sender">Sender:</label>
+            <input type="text" id="sender" name="from" required>
+        </div>
+        <div>
+            <label for="recipient">Recipient:</label>
+            <input type="text" id="recipient" name="to" required>
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="msg" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
+</body>
+
+</html>
