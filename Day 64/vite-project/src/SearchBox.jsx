@@ -28,7 +28,7 @@ export default function SearchBox({updateInfo}) {
       description: dataJson.weather[0].description,
       // wind: dataJson.wind
     };
-    return result;}catch(e){
+    return result;}catch(err){
       throw err;
 
     }
